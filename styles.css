@@ -1,225 +1,169 @@
-:root {
-    --slate: #434455;
-    --navy-blue: #2e2f42;
-    --cornflower: #e7e9fc;
-    --iris: #4d5ae5;
-    --ocean: #404bbf;
-    --white: #fff;
-    --cloud: #f4f4fd;
-  }
-  
-  /*
-  =========================================
-        Base styles
-  =========================================
-  */
-  body {
+body {
     font-family: "Roboto", sans-serif;
-    font-style: normal;
-    color: var(--slate);
-    background: var(--white);
+    color: #434455;
+    background-color: #FFFFFF;
   }
   
-  .link {
-    text-decoration: none;
-  }
-  
-  .list {
-    list-style: none;
-  }
-  
-  /*
-  =========================================
-        Header
-  =========================================
-  */
-  .logo {
+  .nav-logo {
     font-family: "Raleway", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--iris);
+    color: #4d5ae5;
   }
   
-  .logo-studio {
-    color: var(--navy-blue);
+  .nav-logo .logo-span {
+    color: #2e2f42;
   }
   
-  .text-link {
+  .nav-list__list-item .link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--navy-blue);
+    color: #2e2f42;
   }
   
-  .text-link:hover,
-  .text-link:focus {
+  .nav-list__list-item .link:hover,
+  .nav-list__list-item .link:focus {
     color: #404bbf;
   }
   
-  .contacts {
+  .contact {
     font-style: normal;
   }
   
-  .contact-box {
+  .contact .link {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--slate);
+    color: #434455;
   }
   
-  .contact-box:hover,
-  .contact-box:focus {
-    color: var(--ocean);
+  .contact .link:hover,
+  .contact .link:focus {
+    color: #404bbf;
   }
   
-  /* Main
-  =============================================
-     1. Effective Solutions for Your Business
-  =============================================
-  */
-  .title-box {
-    background: var(--navy-blue);
+  .first-section {
+    background-color: #2e2f42;
   }
   
-  .main-title {
+  .first-section__title {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #ffffff;
+    color: #FFFFFF;
   }
   
-  .main-button {
-    background-color: #4d5ae5;
+  .first-section__btn {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    color: #ffffff;
+    background-color: #4D5AE5;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #ffffff;
-  }
-  
-  .main-button:hover,
-  .main-button:focus {
-    background-color: #404bbf;
     cursor: pointer;
   }
   
-  /* 
-  =============================================
-     2. Advantages
-  =============================================
-  */
-  .main-advantages-section {
+  .first-section__btn:hover,
+  .first-section__btn:focus {
+    background-color: #404BBF;
   }
   
-  .advantages-title {
+  .second-section__list-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--navy-blue);
+    color: #2E2F42;
   }
   
-  .advantages-text {
+  .second-section .text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--slate);
+    color: #434455;
   }
   
-  .opportunities-title {
+  .third-section {
+    background-color: #f4f4fd;
+  }
+  
+  .third-section__title {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: var(--navy-blue);
+    color: #2e2f42;
   }
   
-  /* 
-  =============================================
-     3. What are we doing
-  =============================================
-  */
-  
-  /* 
-  =============================================
-     4. Our Team
-  =============================================
-  */
-  .main-section-team {
-    background-color: #f4f4fd;
-  }
-  
-  .card {
+  .third-section__list .list-item{
     background-color: #ffffff;
   }
   
-  .card-name {
-    font-size: 20px;
+  .third-section__list .member-name {
     font-weight: 500;
+    font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--navy-blue);
+    color: #2e2f42;
   }
   
-  .card-text {
+  .third-section__list .text{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--slate);
   }
   
-  /* 
-  =============================================
-     Portfolio
-  =============================================
-  */
-  .portfolio-button {
-    font-family: "Roboto", sans-serif;
+  .forth-section__title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+  }
+  
+  .list-item__title {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--iris);
-    background-color: var(--cloud);
-  }
-  
-  .portfolio-button:hover,
-  .portfolio-button:focus {
-    color: #fff;
-    background-color: #404bbf;
-    cursor: pointer;
-  }
-  
-  .card-project-name {
     font-size: 20px;
-    font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--navy-blue);
+    color: #2e2f42;
   }
   
-  /* 
-  =============================================
-     Footer
-  =============================================
-  */
-  .logo-studio-footer {
-    color: var(--cloud, #f4f4fd);
-  }
-  
-  .footer-box {
-    background: var(--navy-blue);
-  }
-  
-  .paragraf-box {
+  .list-item .text {
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--cloud);
+    color: #434455;
+  }
+  
+  .footer {
+    background-color: #2e2f42;
+  }
+  
+  .footer .text {
+    color: #F4F4FD;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+  }
+  
+  .footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+  }
+  
+  .footer-logo .logo-span {
+    color: #f4f4fd;
   }
